@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Power Converter</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://dg4-design.github.io/dg4-design.github.io-childpage-elements/childPageElements.js" defer></script>
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Power Converter</h1>
+      <div class="input-group">
+        <select id="inputPower">
+          <option value="500" selected>500w</option>
+          <option value="600">600w</option>
+          <option value="700">700w</option>
+          <option value="800">800w</option>
+          <option value="900">900w</option>
+          <option value="1000">1000w</option>
+          <option value="1200">1200w</option>
+          <option value="1500">1500w</option>
+        </select>
+      </div>
+      <div class="input-group time-input">
+        <input type="number" id="inputMinutes" placeholder="分" min="0" value="3" />分 <input type="number" id="inputSeconds" placeholder="秒" min="0" max="60" value="00" />秒
+      </div>
+      <div id="errorMessage"></div>
+      <div class="arrow">を</div>
+
+      <!-- <div class="result">変換後</div> -->
+      <div class="input-group">
+        <select id="outputPower">
+          <option value="500">500w</option>
+          <option value="600">600w</option>
+          <option value="700">700w</option>
+          <option value="800">800w</option>
+          <option value="900">900w</option>
+          <option value="1000">1000w</option>
+          <option value="1200">1200w</option>
+          <option value="1500" selected>1500w</option>
+        </select>
+      </div>
+      <div class="arrow">に変換すると</div>
+      <div class="input-group">
+        <div id="outputTime"></div>
+      </div>
+    </div>
+  </body>
+</html>
