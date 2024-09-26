@@ -17,8 +17,6 @@ function updateOutput() {
   let inputSeconds = parseInt(inputSecondsEl.value) || 0;
   const outputPower = parseInt(outputPowerEl.value);
 
-  errorMessageEl.style.display = "none";
-
   if (inputSeconds >= 60) {
     inputMinutes += Math.floor(inputSeconds / 60);
     inputSeconds %= 60;
