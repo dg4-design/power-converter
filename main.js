@@ -34,10 +34,5 @@ function updateOutput() {
     const outputMinutes = Math.floor(outputSeconds / 60);
     const remainingSeconds = Math.round(outputSeconds % 60);
     outputTimeEl.textContent = `${outputMinutes}分${remainingSeconds.toString().padStart(2, "0")}秒`;
-    outputTimeEl.style.display = "block";
-    document.querySelector(".arrow:last-of-type").style.marginBottom = "20px";
-  } else {
-    outputTimeEl.style.display = "none";
-    document.querySelector(".arrow:last-of-type").style.marginBottom = "0";
   }
 }
